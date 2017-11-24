@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2341EE437707F33EB9D6CD8F /* libPods-JFCircleVIewDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 628E725FDBEE2658CF7A5A09 /* libPods-JFCircleVIewDemoTests.a */; };
+		89167E4EA43BC7E55E342398 /* libPods-JFCircleVIewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBC0121F07CC3174D145CC2 /* libPods-JFCircleVIewDemo.a */; };
+		8F61DDAF856C7AA69C2C9CDC /* libPods-JFCircleVIewDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFF00E54F0F6E1B8CAF400C /* libPods-JFCircleVIewDemoUITests.a */; };
+		997B70735E1377FDF11F0684 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B7C4142E5564DA8E4213B /* main.m */; };
+		997B71AB5FCD50F1A5F2FB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 997B7E3854CFFAF5CF5E55C6 /* Assets.xcassets */; };
+		997B72152C0C4D203920F9C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997B7873E9516FEBB7982CC7 /* LaunchScreen.storyboard */; };
+		997B7278E51D4C5E93350C8F /* JFCircleVIewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B7074D4AA249EAA502838 /* JFCircleVIewDemoTests.m */; };
+		997B7732366FD8D4534029E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B761933B1EBB8654FA84C /* AppDelegate.m */; };
+		997B785A9885340C192B6645 /* JFCircleVIewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B73545C237CB9ECEFADB8 /* JFCircleVIewDemoUITests.m */; };
+		997B78E5B02B3C71AA1B8DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997B7A658EFAC287CC4538D3 /* Main.storyboard */; };
+		997B79887533D04E2BEE7801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B7250139AF6C3D17CE90A /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		997B72E037659C317C96097F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 997B705517FCC0FED3A2D50D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997B725137F8CF1EA5C5D201;
+			remoteInfo = JFCircleVIewDemo;
+		};
+		997B7412D2B0AAC12321B0CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 997B705517FCC0FED3A2D50D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997B725137F8CF1EA5C5D201;
+			remoteInfo = JFCircleVIewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4760CBFADBB2458BC7C898DA /* Pods-JFCircleVIewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemo/Pods-JFCircleVIewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4B67B27E611E186E3D802AFE /* Pods-JFCircleVIewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemo/Pods-JFCircleVIewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		572784B41C29E36DC5208D9C /* Pods-JFCircleVIewDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemoUITests/Pods-JFCircleVIewDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F8F039E4B2BAE6E4B43F855 /* Pods-JFCircleVIewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemoTests/Pods-JFCircleVIewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		628E725FDBEE2658CF7A5A09 /* libPods-JFCircleVIewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFCircleVIewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBC0121F07CC3174D145CC2 /* libPods-JFCircleVIewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFCircleVIewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E521F90D5BE1FC8E214BC0 /* Pods-JFCircleVIewDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemoUITests/Pods-JFCircleVIewDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		997B7045F806CA4D8B8E12E7 /* JFCircleVIewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFCircleVIewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		997B707070E1E7601D87A2E8 /* JFCircleVIewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFCircleVIewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		997B7074D4AA249EAA502838 /* JFCircleVIewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFCircleVIewDemoTests.m; sourceTree = "<group>"; };
+		997B7152BFE514560BEA2FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		997B720801C0C903AD9204DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		997B7232B80DCBA76DD036AC /* JFCircleVIewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFCircleVIewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		997B7250139AF6C3D17CE90A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		997B73545C237CB9ECEFADB8 /* JFCircleVIewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFCircleVIewDemoUITests.m; sourceTree = "<group>"; };
+		997B737DB70BABC00F3F1576 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		997B74EAD5133D3556C187D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		997B761933B1EBB8654FA84C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		997B778E88109CAA2273EEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		997B789A881B210DC595F156 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		997B7A7872170869F67092A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		997B7C4142E5564DA8E4213B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		997B7E3854CFFAF5CF5E55C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB379C16D66BA79C2B7EBC5C /* Pods-JFCircleVIewDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemoTests/Pods-JFCircleVIewDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBFF00E54F0F6E1B8CAF400C /* libPods-JFCircleVIewDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFCircleVIewDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		997B71C72A4356571C25152B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89167E4EA43BC7E55E342398 /* libPods-JFCircleVIewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997B74E0F4BD64E5CD27C4D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F61DDAF856C7AA69C2C9CDC /* libPods-JFCircleVIewDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997B7DC9B12E3772E009D63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2341EE437707F33EB9D6CD8F /* libPods-JFCircleVIewDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70DC22A0EA9E552E0561C456 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B67B27E611E186E3D802AFE /* Pods-JFCircleVIewDemo.debug.xcconfig */,
+				4760CBFADBB2458BC7C898DA /* Pods-JFCircleVIewDemo.release.xcconfig */,
+				CB379C16D66BA79C2B7EBC5C /* Pods-JFCircleVIewDemoTests.debug.xcconfig */,
+				5F8F039E4B2BAE6E4B43F855 /* Pods-JFCircleVIewDemoTests.release.xcconfig */,
+				572784B41C29E36DC5208D9C /* Pods-JFCircleVIewDemoUITests.debug.xcconfig */,
+				84E521F90D5BE1FC8E214BC0 /* Pods-JFCircleVIewDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		997B7037C0A1BC56C1D3C492 /* JFCircleVIewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				997B7152BFE514560BEA2FF7 /* Info.plist */,
+				997B7E3854CFFAF5CF5E55C6 /* Assets.xcassets */,
+				997B7873E9516FEBB7982CC7 /* LaunchScreen.storyboard */,
+				997B7C4142E5564DA8E4213B /* main.m */,
+				997B737DB70BABC00F3F1576 /* AppDelegate.h */,
+				997B761933B1EBB8654FA84C /* AppDelegate.m */,
+				997B7A658EFAC287CC4538D3 /* Main.storyboard */,
+				997B789A881B210DC595F156 /* ViewController.h */,
+				997B7250139AF6C3D17CE90A /* ViewController.m */,
+			);
+			path = JFCircleVIewDemo;
+			sourceTree = "<group>";
+		};
+		997B723ED2EBC12925C55655 = {
+			isa = PBXGroup;
+			children = (
+				997B7866DA8A072EE8592370 /* Products */,
+				997B7037C0A1BC56C1D3C492 /* JFCircleVIewDemo */,
+				997B79A0B3531FA8FEE77CE9 /* JFCircleVIewDemoTests */,
+				997B7CE42FA66D55D6563CCF /* JFCircleVIewDemoUITests */,
+				70DC22A0EA9E552E0561C456 /* Pods */,
+				A8E29A4ADC0781FE01623ADD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		997B7866DA8A072EE8592370 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				997B7232B80DCBA76DD036AC /* JFCircleVIewDemo.app */,
+				997B707070E1E7601D87A2E8 /* JFCircleVIewDemoTests.xctest */,
+				997B7045F806CA4D8B8E12E7 /* JFCircleVIewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		997B79A0B3531FA8FEE77CE9 /* JFCircleVIewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				997B778E88109CAA2273EEC8 /* Info.plist */,
+				997B7074D4AA249EAA502838 /* JFCircleVIewDemoTests.m */,
+			);
+			path = JFCircleVIewDemoTests;
+			sourceTree = "<group>";
+		};
+		997B7CE42FA66D55D6563CCF /* JFCircleVIewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				997B7A7872170869F67092A7 /* Info.plist */,
+				997B73545C237CB9ECEFADB8 /* JFCircleVIewDemoUITests.m */,
+			);
+			path = JFCircleVIewDemoUITests;
+			sourceTree = "<group>";
+		};
+		A8E29A4ADC0781FE01623ADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BBC0121F07CC3174D145CC2 /* libPods-JFCircleVIewDemo.a */,
+				628E725FDBEE2658CF7A5A09 /* libPods-JFCircleVIewDemoTests.a */,
+				FBFF00E54F0F6E1B8CAF400C /* libPods-JFCircleVIewDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		997B70F68D8B2A9ED95BDA99 /* JFCircleVIewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997B776A1C38F03D78E4B32C /* Build configuration list for PBXNativeTarget "JFCircleVIewDemoUITests" */;
+			buildPhases = (
+				B8AF502DDC68A45FCB1B7E93 /* [CP] Check Pods Manifest.lock */,
+				997B7FE426B717DC7866A3A1 /* Sources */,
+				997B74E0F4BD64E5CD27C4D8 /* Frameworks */,
+				997B780090F149EA16ACA3B9 /* Resources */,
+				64F58A08E23F0B31C54F29E7 /* [CP] Embed Pods Frameworks */,
+				33312F8A1C2C533E658135A1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				997B740DD50C617E9A9990B2 /* PBXTargetDependency */,
+			);
+			name = JFCircleVIewDemoUITests;
+			productName = JFCircleVIewDemoUITests;
+			productReference = 997B7045F806CA4D8B8E12E7 /* JFCircleVIewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		997B725137F8CF1EA5C5D201 /* JFCircleVIewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997B7071D48B440ADBDCE50E /* Build configuration list for PBXNativeTarget "JFCircleVIewDemo" */;
+			buildPhases = (
+				A44F3D2C5C0B4F215ED210F8 /* [CP] Check Pods Manifest.lock */,
+				997B795E6C32D5EC2ABE35AC /* Sources */,
+				997B71C72A4356571C25152B /* Frameworks */,
+				997B7186F27AB24C2F86F70F /* Resources */,
+				D45276C7BF0A11B467C8D1C5 /* [CP] Embed Pods Frameworks */,
+				81E11F297E0749660CCC8689 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFCircleVIewDemo;
+			productName = JFCircleVIewDemo;
+			productReference = 997B7232B80DCBA76DD036AC /* JFCircleVIewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		997B7E25B2C84BC1C0BA491B /* JFCircleVIewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 997B79DD457D63461EB10295 /* Build configuration list for PBXNativeTarget "JFCircleVIewDemoTests" */;
+			buildPhases = (
+				DB625AE7D5130DF0EED9937E /* [CP] Check Pods Manifest.lock */,
+				997B70D8305A1C7D9678A7D8 /* Sources */,
+				997B7DC9B12E3772E009D63C /* Frameworks */,
+				997B7B8AA3584AA549474DCD /* Resources */,
+				B0C466FA95AA200CD421337E /* [CP] Embed Pods Frameworks */,
+				17F4513A66F27A7B58FC210C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				997B73AF21D662FE733507E9 /* PBXTargetDependency */,
+			);
+			name = JFCircleVIewDemoTests;
+			productName = JFCircleVIewDemoTests;
+			productReference = 997B707070E1E7601D87A2E8 /* JFCircleVIewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		997B705517FCC0FED3A2D50D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Jeffrey;
+			};
+			buildConfigurationList = 997B7A7F29423682DA77DC68 /* Build configuration list for PBXProject "JFCircleVIewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 997B723ED2EBC12925C55655;
+			productRefGroup = 997B7866DA8A072EE8592370 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				997B725137F8CF1EA5C5D201 /* JFCircleVIewDemo */,
+				997B7E25B2C84BC1C0BA491B /* JFCircleVIewDemoTests */,
+				997B70F68D8B2A9ED95BDA99 /* JFCircleVIewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		997B7186F27AB24C2F86F70F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997B71AB5FCD50F1A5F2FB2D /* Assets.xcassets in Resources */,
+				997B72152C0C4D203920F9C3 /* LaunchScreen.storyboard in Resources */,
+				997B78E5B02B3C71AA1B8DE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997B780090F149EA16ACA3B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997B7B8AA3584AA549474DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17F4513A66F27A7B58FC210C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFCircleVIewDemoTests/Pods-JFCircleVIewDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33312F8A1C2C533E658135A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFCircleVIewDemoUITests/Pods-JFCircleVIewDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64F58A08E23F0B31C54F29E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFCircleVIewDemoUITests/Pods-JFCircleVIewDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81E11F297E0749660CCC8689 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFCircleVIewDemo/Pods-JFCircleVIewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A44F3D2C5C0B4F215ED210F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFCircleVIewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C466FA95AA200CD421337E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFCircleVIewDemoTests/Pods-JFCircleVIewDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8AF502DDC68A45FCB1B7E93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFCircleVIewDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45276C7BF0A11B467C8D1C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JFCircleVIewDemo/Pods-JFCircleVIewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB625AE7D5130DF0EED9937E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFCircleVIewDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		997B70D8305A1C7D9678A7D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997B7278E51D4C5E93350C8F /* JFCircleVIewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997B795E6C32D5EC2ABE35AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997B70735E1377FDF11F0684 /* main.m in Sources */,
+				997B7732366FD8D4534029E1 /* AppDelegate.m in Sources */,
+				997B79887533D04E2BEE7801 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997B7FE426B717DC7866A3A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				997B785A9885340C192B6645 /* JFCircleVIewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		997B73AF21D662FE733507E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 997B725137F8CF1EA5C5D201 /* JFCircleVIewDemo */;
+			targetProxy = 997B7412D2B0AAC12321B0CD /* PBXContainerItemProxy */;
+		};
+		997B740DD50C617E9A9990B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 997B725137F8CF1EA5C5D201 /* JFCircleVIewDemo */;
+			targetProxy = 997B72E037659C317C96097F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		997B7873E9516FEBB7982CC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				997B720801C0C903AD9204DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		997B7A658EFAC287CC4538D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				997B74EAD5133D3556C187D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		997B7150F7DEDB82CC7D82F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B67B27E611E186E3D802AFE /* Pods-JFCircleVIewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JFCircleVIewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CRF.JFCircleVIewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		997B744FEF047A67DA9BA1BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572784B41C29E36DC5208D9C /* Pods-JFCircleVIewDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = JFCircleVIewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CRF.JFCircleVIewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFCircleVIewDemo;
+			};
+			name = Debug;
+		};
+		997B767A45EB9C8B1D1F4AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		997B772A82DAAB669F02C6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E521F90D5BE1FC8E214BC0 /* Pods-JFCircleVIewDemoUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = JFCircleVIewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CRF.JFCircleVIewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JFCircleVIewDemo;
+			};
+			name = Release;
+		};
+		997B77F4E2682631105824E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB379C16D66BA79C2B7EBC5C /* Pods-JFCircleVIewDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JFCircleVIewDemo.app/JFCircleVIewDemo";
+				INFOPLIST_FILE = JFCircleVIewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CRF.JFCircleVIewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		997B7AA77BC171B15E9B7B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8F039E4B2BAE6E4B43F855 /* Pods-JFCircleVIewDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JFCircleVIewDemo.app/JFCircleVIewDemo";
+				INFOPLIST_FILE = JFCircleVIewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CRF.JFCircleVIewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		997B7AC32FD96F9DF60D8A01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4760CBFADBB2458BC7C898DA /* Pods-JFCircleVIewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JFCircleVIewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CRF.JFCircleVIewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		997B7F9069222196CF8EB28F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		997B7071D48B440ADBDCE50E /* Build configuration list for PBXNativeTarget "JFCircleVIewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997B7150F7DEDB82CC7D82F0 /* Debug */,
+				997B7AC32FD96F9DF60D8A01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		997B776A1C38F03D78E4B32C /* Build configuration list for PBXNativeTarget "JFCircleVIewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997B744FEF047A67DA9BA1BD /* Debug */,
+				997B772A82DAAB669F02C6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		997B79DD457D63461EB10295 /* Build configuration list for PBXNativeTarget "JFCircleVIewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997B77F4E2682631105824E0 /* Debug */,
+				997B7AA77BC171B15E9B7B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		997B7A7F29423682DA77DC68 /* Build configuration list for PBXProject "JFCircleVIewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				997B7F9069222196CF8EB28F /* Debug */,
+				997B767A45EB9C8B1D1F4AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 997B705517FCC0FED3A2D50D /* Project object */;
+}
