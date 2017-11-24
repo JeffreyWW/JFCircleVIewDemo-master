@@ -18,6 +18,7 @@
 		997B785A9885340C192B6645 /* JFCircleVIewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B73545C237CB9ECEFADB8 /* JFCircleVIewDemoUITests.m */; };
 		997B78E5B02B3C71AA1B8DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997B7A658EFAC287CC4538D3 /* Main.storyboard */; };
 		997B79887533D04E2BEE7801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B7250139AF6C3D17CE90A /* ViewController.m */; };
+		997B7FE0B888BAC99410E71C /* JFCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B7AA65CE56EE898077B52 /* JFCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +60,10 @@
 		997B778E88109CAA2273EEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		997B789A881B210DC595F156 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		997B7A7872170869F67092A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		997B7AA65CE56EE898077B52 /* JFCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCircleView.m; sourceTree = "<group>"; };
 		997B7C4142E5564DA8E4213B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		997B7E3854CFFAF5CF5E55C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		997B7EF4236DB2587952725E /* JFCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCircleView.h; sourceTree = "<group>"; };
 		CB379C16D66BA79C2B7EBC5C /* Pods-JFCircleVIewDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemoTests/Pods-JFCircleVIewDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBFF00E54F0F6E1B8CAF400C /* libPods-JFCircleVIewDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFCircleVIewDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +134,7 @@
 				997B7CE42FA66D55D6563CCF /* JFCircleVIewDemoUITests */,
 				70DC22A0EA9E552E0561C456 /* Pods */,
 				A8E29A4ADC0781FE01623ADD /* Frameworks */,
+				997B7E3F05FD94CB3AB5841C /* JFCircleView */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +164,15 @@
 				997B73545C237CB9ECEFADB8 /* JFCircleVIewDemoUITests.m */,
 			);
 			path = JFCircleVIewDemoUITests;
+			sourceTree = "<group>";
+		};
+		997B7E3F05FD94CB3AB5841C /* JFCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				997B7AA65CE56EE898077B52 /* JFCircleView.m */,
+				997B7EF4236DB2587952725E /* JFCircleView.h */,
+			);
+			path = JFCircleView;
 			sourceTree = "<group>";
 		};
 		A8E29A4ADC0781FE01623ADD /* Frameworks */ = {
@@ -454,6 +467,7 @@
 				997B70735E1377FDF11F0684 /* main.m in Sources */,
 				997B7732366FD8D4534029E1 /* AppDelegate.m in Sources */,
 				997B79887533D04E2BEE7801 /* ViewController.m in Sources */,
+				997B7FE0B888BAC99410E71C /* JFCircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
