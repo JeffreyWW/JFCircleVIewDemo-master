@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,12 +29,57 @@
                                     <constraint firstAttribute="height" constant="200" id="t8P-0n-kGr"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6M-PV-73f">
+                                <rect key="frame" x="71" y="274" width="46" height="30"/>
+                                <state key="normal" title="可循环"/>
+                                <connections>
+                                    <action selector="clickBtCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oYr-as-mAx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85S-ea-wSy">
+                                <rect key="frame" x="250.5" y="274" width="62" height="30"/>
+                                <state key="normal" title="不可循环"/>
+                                <connections>
+                                    <action selector="clickBtCanNotCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFV-2N-NOm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pct-RM-Cz2">
+                                <rect key="frame" x="63" y="329" width="62" height="30"/>
+                                <state key="normal" title="自动滑动"/>
+                                <connections>
+                                    <action selector="clickBtAutoScroll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Na-1H-VXq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grv-NA-u8T">
+                                <rect key="frame" x="243" y="329" width="77" height="30"/>
+                                <state key="normal" title="非自动滑动"/>
+                                <connections>
+                                    <action selector="clickBtNotAutoScroll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JIL-mg-vdA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-gv-yUJ">
+                                <rect key="frame" x="45" y="384" width="99" height="30"/>
+                                <state key="normal" title="Scale垂直样式"/>
+                                <connections>
+                                    <action selector="clickBtScalType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7K-tf-f1x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wOk-72-nIr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Gb-Nk-t01"/>
                             <constraint firstAttribute="trailing" secondItem="wOk-72-nIr" secondAttribute="trailing" id="9lh-yq-ttb"/>
+                            <constraint firstItem="85S-ea-wSy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="ApU-S9-pzW"/>
+                            <constraint firstItem="n1h-gv-yUJ" firstAttribute="top" secondItem="pct-RM-Cz2" secondAttribute="bottom" constant="25" id="D5J-p0-k7c"/>
                             <constraint firstItem="wOk-72-nIr" firstAttribute="top" secondItem="Uqx-kN-C3a" secondAttribute="bottom" id="FuY-yM-QcD"/>
+                            <constraint firstItem="n1h-gv-yUJ" firstAttribute="centerX" secondItem="pct-RM-Cz2" secondAttribute="centerX" id="PcD-lX-Rhb"/>
+                            <constraint firstItem="grv-NA-u8T" firstAttribute="centerY" secondItem="pct-RM-Cz2" secondAttribute="centerY" id="R1K-J4-d2E"/>
+                            <constraint firstItem="pct-RM-Cz2" firstAttribute="centerX" secondItem="g6M-PV-73f" secondAttribute="centerX" id="Y1G-4z-JAu"/>
+                            <constraint firstItem="85S-ea-wSy" firstAttribute="top" secondItem="g6M-PV-73f" secondAttribute="top" id="YxP-aL-Zyb"/>
+                            <constraint firstItem="g6M-PV-73f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1/2" id="lgH-cI-BY1"/>
+                            <constraint firstItem="grv-NA-u8T" firstAttribute="centerX" secondItem="85S-ea-wSy" secondAttribute="centerX" id="oiz-7l-Hgy"/>
+                            <constraint firstItem="g6M-PV-73f" firstAttribute="top" secondItem="wOk-72-nIr" secondAttribute="bottom" constant="10" id="ozb-OW-sOy"/>
+                            <constraint firstItem="pct-RM-Cz2" firstAttribute="top" secondItem="g6M-PV-73f" secondAttribute="bottom" constant="25" id="pmh-I9-0Ob"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SVJ-WA-QfJ"/>

@@ -24,8 +24,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        self.autoScroll = NO;
-        self.circle = YES;
+        [self defaultSet];
         self.contentViews = [NSMutableArray array];
         self.scrollView = [[UIScrollView alloc] init];
         self.scrollView.delegate = self;
@@ -46,6 +45,12 @@
         self.layer.masksToBounds = YES;
     }
     return self;
+}
+
+/**默认常规属性设置*/
+- (void)defaultSet {
+    self.autoScroll = NO;
+    self.circle = YES;
 }
 
 - (NSUInteger)maxNumber {
@@ -69,10 +74,9 @@
     [self layoutIfNeeded];
     /**开始计时*/
     [self timerStart];
+    CGPoint defaultOffset = self.isCircle ? CGPointMake(self.scrollView.frame.size.width * 2, 0) : CGPointZero;
     /**如果是循环的,那么默认偏移到第三张图*/
-    if (self.isCircle) {
-        [self.scrollView setContentOffset:CGPointMake(self.scrollView.frame.size.width * 2, 0) animated:NO];
-    }
+    [self.scrollView setContentOffset:defaultOffset animated:NO];
 }
 
 - (void)reSetViews {
@@ -113,12 +117,12 @@
         [scrollViewContentView addSubview:insideContentView];
         /**内部的contentView布局*/
         [self insideContentViewLayout:insideContentView index:index];
-        /**可循环的话,第一张内容在所有内容中下标是2*/
-        if (self.isCircle) {
-            CGFloat scaleY = index == 2 ? 1.0f : 1.0f - self.contentViewScaleDifferent;
-            insideContentView.transform = CGAffineTransformMakeScale(1, scaleY);
-        }
+        /**添加手势*/
         [self addTapGestureRecognizerToInsideContentView:insideContentView outsideIndex:outSideIndex];
+        /**默认的动画显示*/
+        NSUInteger scaleIndex = self.circle ? 2 : 0;
+        CGFloat scaleY = index == scaleIndex ? 1.0f : 1.0f - self.contentViewScaleDifferent;
+        insideContentView.transform = CGAffineTransformMakeScale(1, scaleY);
     }
 }
 
@@ -195,7 +199,7 @@
 
 /**计时器停止*/
 - (void)timerStop {
-    if (self.autoScroll) {
+    if (self.timer) {
         [self.timer invalidate];
     }
 }
@@ -208,13 +212,19 @@
 
 /**下一页*/
 - (void)nextPage {
-    [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x + self.scrollView.frame.size.width, 0) animated:YES];
+    CGFloat offsetXWillBe = self.scrollView.contentOffset.x + self.scrollView.frame.size.width;
+    /**是否超过了最后一页*/
+    BOOL overScroll = offsetXWillBe > self.scrollView.frame.size.width * (self.contentViews.count - 1);
+    BOOL animate = YES;
+    if (!self.circle && overScroll) {
+        offsetXWillBe = 0;
+        animate = NO;
+    }
+    [self.scrollView setContentOffset:CGPointMake(offsetXWillBe, 0) animated:animate];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (!self.circle) {
-        return;
-    }
+
     /**移动完后的偏移量*/
     CGFloat currentOffSet = scrollView.contentOffset.x;
     if (self.contentViewScaleDifferent) {
@@ -224,9 +234,11 @@
             CGFloat contentOffSetBalance = scrollView.frame.size.width * contentViewIndex;
             /**移动完偏移量和最大偏移的绝对值*/
             CGFloat contentOffSetDifferent = fabsf(contentOffSetBalance - currentOffSet);
-            NSLog(@"绝对值是%f", contentOffSetDifferent);
             contentView.transform = CGAffineTransformMakeScale(1.0f, (CGFloat) (1.0 - self.contentViewScaleDifferent * (contentOffSetDifferent / scrollView.frame.size.width)));
         }
+    }
+    if (!self.circle) {
+        return;
     }
     if (currentOffSet <= scrollView.frame.size.width) {
         NSLog(@"最小");
