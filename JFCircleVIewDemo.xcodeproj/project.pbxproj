@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F73A891FC7C63E0093BCC2 /* JFInsideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F73A881FC7C63E0093BCC2 /* JFInsideView.m */; };
+		00F73A8B1FC7C6490093BCC2 /* JFInsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F73A8A1FC7C6490093BCC2 /* JFInsideView.xib */; };
 		2341EE437707F33EB9D6CD8F /* libPods-JFCircleVIewDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 628E725FDBEE2658CF7A5A09 /* libPods-JFCircleVIewDemoTests.a */; };
 		89167E4EA43BC7E55E342398 /* libPods-JFCircleVIewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBC0121F07CC3174D145CC2 /* libPods-JFCircleVIewDemo.a */; };
 		8F61DDAF856C7AA69C2C9CDC /* libPods-JFCircleVIewDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFF00E54F0F6E1B8CAF400C /* libPods-JFCircleVIewDemoUITests.a */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00F73A871FC7C63E0093BCC2 /* JFInsideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFInsideView.h; sourceTree = "<group>"; };
+		00F73A881FC7C63E0093BCC2 /* JFInsideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFInsideView.m; sourceTree = "<group>"; };
+		00F73A8A1FC7C6490093BCC2 /* JFInsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFInsideView.xib; sourceTree = "<group>"; };
 		4760CBFADBB2458BC7C898DA /* Pods-JFCircleVIewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemo/Pods-JFCircleVIewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4B67B27E611E186E3D802AFE /* Pods-JFCircleVIewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemo/Pods-JFCircleVIewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		572784B41C29E36DC5208D9C /* Pods-JFCircleVIewDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFCircleVIewDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFCircleVIewDemoUITests/Pods-JFCircleVIewDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 				70DC22A0EA9E552E0561C456 /* Pods */,
 				A8E29A4ADC0781FE01623ADD /* Frameworks */,
 				997B7E3F05FD94CB3AB5841C /* JFCircleView */,
+				997B7E885D7E478AA50BB278 /* JFInsideView */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +179,16 @@
 				997B7EF4236DB2587952725E /* JFCircleView.h */,
 			);
 			path = JFCircleView;
+			sourceTree = "<group>";
+		};
+		997B7E885D7E478AA50BB278 /* JFInsideView */ = {
+			isa = PBXGroup;
+			children = (
+				00F73A871FC7C63E0093BCC2 /* JFInsideView.h */,
+				00F73A881FC7C63E0093BCC2 /* JFInsideView.m */,
+				00F73A8A1FC7C6490093BCC2 /* JFInsideView.xib */,
+			);
+			path = JFInsideView;
 			sourceTree = "<group>";
 		};
 		A8E29A4ADC0781FE01623ADD /* Frameworks */ = {
@@ -282,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F73A8B1FC7C6490093BCC2 /* JFInsideView.xib in Resources */,
 				997B71AB5FCD50F1A5F2FB2D /* Assets.xcassets in Resources */,
 				997B72152C0C4D203920F9C3 /* LaunchScreen.storyboard in Resources */,
 				997B78E5B02B3C71AA1B8DE0 /* Main.storyboard in Resources */,
@@ -464,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F73A891FC7C63E0093BCC2 /* JFInsideView.m in Sources */,
 				997B70735E1377FDF11F0684 /* main.m in Sources */,
 				997B7732366FD8D4534029E1 /* AppDelegate.m in Sources */,
 				997B79887533D04E2BEE7801 /* ViewController.m in Sources */,

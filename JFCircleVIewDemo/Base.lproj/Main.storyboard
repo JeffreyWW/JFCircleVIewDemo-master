@@ -20,9 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOk-72-nIr" customClass="JFCircleView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="t8P-0n-kGr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wOk-72-nIr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Gb-Nk-t01"/>
+                            <constraint firstAttribute="trailing" secondItem="wOk-72-nIr" secondAttribute="trailing" id="9lh-yq-ttb"/>
+                            <constraint firstItem="wOk-72-nIr" firstAttribute="top" secondItem="Uqx-kN-C3a" secondAttribute="bottom" id="FuY-yM-QcD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SVJ-WA-QfJ"/>
+                    <connections>
+                        <outlet property="circleView" destination="wOk-72-nIr" id="Dyc-7t-FKq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +61,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5Z-9r-hQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.8" y="477.66116941529236"/>
+            <point key="canvasLocation" x="-340" y="124"/>
         </scene>
     </scenes>
 </document>

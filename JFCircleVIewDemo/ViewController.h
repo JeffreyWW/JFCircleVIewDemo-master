@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JFCircleView.h"
 
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <SHCircleViewDataSource, SHCircleViewDelegate>
 
 
 @end
