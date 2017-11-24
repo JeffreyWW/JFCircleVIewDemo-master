@@ -61,7 +61,7 @@
                                 <rect key="frame" x="45" y="384" width="99" height="30"/>
                                 <state key="normal" title="Scale垂直样式"/>
                                 <connections>
-                                    <action selector="clickBtScalType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7K-tf-f1x"/>
+                                    <action selector="clickBtScaleType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7K-tf-f1x"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "JFInsideView.h"
+#import "JFBannerModel.h"
 
 
 @interface ViewController ()
 @property(nonatomic, weak) IBOutlet JFCircleView *circleView;
+@property(nonatomic, copy) NSArray *models;
 
 @end
 
@@ -19,15 +20,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupModels];
     self.navigationItem.title = @"JFCircleView";
     self.circleView.dataSource = self;
     self.circleView.delegate = self;
-    ^(CALayer *insideContentViewLayer) {
-
-    };
     NSLog(@"%@", NSStringFromCGRect(self.circleView.frame));
     [self.circleView reloadData];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)setupModels {
+    JFBannerModel *model1 = [JFBannerModel modelWithImageName:@"banner1" clickUrl:@"https://www.baidu.com"];
+    JFBannerModel *model2 = [JFBannerModel modelWithImageName:@"banner2" clickUrl:@"https://www.jianshu.com"];
+    JFBannerModel *model3 = [JFBannerModel modelWithImageName:@"banner3" clickUrl:@"https://www.sina.com.cn"];
+    JFBannerModel *model4 = [JFBannerModel modelWithImageName:@"banner4" clickUrl:@"https://github.com"];
+    self.models = @[model1, model2, model3, model4];
+
 }
 
 - (IBAction)clickBtCircle:(UIButton *)sender {
@@ -50,9 +58,11 @@
     [self.circleView reloadData];
 }
 
-- (IBAction)clickBtScalType:(UIButton *)sender {
-    self.circleView.scrollViewEdgInset = UIEdgeInsetsMake(8, 44, 8, 44);
-    self.circleView.contentViewMulriple = 1.7;
+- (IBAction)clickBtScaleType:(UIButton *)sender {
+
+    self.circleView.scrollViewEdgInset = UIEdgeInsetsMake(22, 44, 22, 44);
+    /**图片宽高比(注意一定要浮点类型)*/
+    self.circleView.contentViewMulriple = 750.f/390;
     self.circleView.contentViewScaleDifferent = 0.2;
     [self.circleView reloadData];
 }
@@ -63,45 +73,54 @@
 }
 
 - (NSUInteger)circleViewContentViewNumber:(JFCircleView *)circleView {
-    return 6;
+    return self.models.count;
 }
 
-- (UIView *)circleView:(JFCircleView *)circleView contentViewAtIndex:(NSInteger)index {
-    JFInsideView *testView = [[NSBundle mainBundle] loadNibNamed:@"JFInsideView" owner:nil options:nil].firstObject;
-    testView.layer.cornerRadius = 10.f;
-    testView.layer.shadowColor = [UIColor blackColor].CGColor;
-    testView.layer.shadowOpacity = 0.8f;
-    testView.layer.shadowRadius = 2.f;
-    testView.layer.shadowOffset = CGSizeMake(2, 2);
-    testView.lbTest.text = [NSString stringWithFormat:@"%d", index + 1];
-    if (index == 0) {
-        testView.backgroundColor = [UIColor grayColor];
-    }
+- (UIView *)circleView:(JFCircleView *)circleView contentViewAtIndex:(NSUInteger)index {
+    JFBannerModel *model = self.models[index];
+    NSString *path = [[NSBundle mainBundle] pathForResource:model.imageName ofType:@"jpg"];
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.image = image;
 
-    if (index == 1) {
-        testView.backgroundColor = [UIColor greenColor];
-    }
-    if (index == 2) {
-        testView.backgroundColor = [UIColor redColor];
-    }
-    if (index == 3) {
-        testView.backgroundColor = [UIColor darkGrayColor];
-    }
-    if (index == 4) {
-        testView.backgroundColor = [UIColor yellowColor];
-    }
-    if (index == 5) {
-        testView.backgroundColor = [UIColor blueColor];
-    }
-    if (index == 6) {
-        testView.backgroundColor = [UIColor brownColor];
-    }
+//    JFInsideView *testView = [[NSBundle mainBundle] loadNibNamed:@"JFInsideView" owner:nil options:nil].firstObject;
+    imageView.layer.cornerRadius = 10.f;
+    imageView.layer.shadowColor = [UIColor blackColor].CGColor;
+    imageView.layer.shadowOpacity = 0.8f;
+    imageView.layer.shadowRadius = 2.f;
+    imageView.layer.shadowOffset = CGSizeMake(2, 2);
+//    imageView.lbTest.text = [NSString stringWithFormat:@"%d", index + 1];
+//    if (index == 0) {
+//        testView.backgroundColor = [UIColor grayColor];
+//    }
+//
+//    if (index == 1) {
+//        testView.backgroundColor = [UIColor greenColor];
+//    }
+//    if (index == 2) {
+//        testView.backgroundColor = [UIColor redColor];
+//    }
+//    if (index == 3) {
+//        testView.backgroundColor = [UIColor darkGrayColor];
+//    }
+//    if (index == 4) {
+//        testView.backgroundColor = [UIColor yellowColor];
+//    }
+//    if (index == 5) {
+//        testView.backgroundColor = [UIColor blueColor];
+//    }
+//    if (index == 6) {
+//        testView.backgroundColor = [UIColor brownColor];
+//    }
 
-    return testView;
+    return imageView;
 }
 
-- (void)circleView:(JFCircleView *)circleView clickIndex:(NSInteger)index {
+- (void)circleView:(JFCircleView *)circleView clickIndex:(NSUInteger)index {
+    JFBannerModel *model = self.models[index];
     NSLog([NSString stringWithFormat:@"点击了下标:%d", index]);
+    NSLog([NSString stringWithFormat:@"地址是:%@", model.clickUrl]);
+
 }
 
 
