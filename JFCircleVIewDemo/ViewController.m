@@ -71,8 +71,8 @@
     testView.layer.cornerRadius = 10.f;
     testView.layer.shadowColor = [UIColor blackColor].CGColor;
     testView.layer.shadowOpacity = 0.8f;
-    testView.layer.shadowRadius = 4.f;
-    testView.layer.shadowOffset = CGSizeMake(2.5, 2.5);
+    testView.layer.shadowRadius = 2.f;
+    testView.layer.shadowOffset = CGSizeMake(2, 2);
     testView.lbTest.text = [NSString stringWithFormat:@"%d", index + 1];
     if (index == 0) {
         testView.backgroundColor = [UIColor grayColor];
