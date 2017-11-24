@@ -520,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JFCircleVIewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CRF.JFCircleVIewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,6 +637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JFCircleVIewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CRF.JFCircleVIewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -708,6 +710,7 @@
 				997B7AC32FD96F9DF60D8A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		997B776A1C38F03D78E4B32C /* Build configuration list for PBXNativeTarget "JFCircleVIewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +719,7 @@
 				997B772A82DAAB669F02C6CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		997B79DD457D63461EB10295 /* Build configuration list for PBXNativeTarget "JFCircleVIewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -724,6 +728,7 @@
 				997B7AA77BC171B15E9B7B75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		997B7A7F29423682DA77DC68 /* Build configuration list for PBXProject "JFCircleVIewDemo" */ = {
 			isa = XCConfigurationList;
