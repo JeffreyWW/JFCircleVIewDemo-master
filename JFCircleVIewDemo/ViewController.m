@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "JFBannerModel.h"
-
+#import "Masonry.h"
 
 @interface ViewController ()
 @property(nonatomic, weak) IBOutlet JFCircleView *circleView;
@@ -62,7 +62,7 @@
 
     self.circleView.scrollViewEdgInset = UIEdgeInsetsMake(22, 44, 22, 44);
     /**图片宽高比(注意一定要浮点类型)*/
-    self.circleView.contentViewMulriple = 750.f/390;
+    self.circleView.contentViewMulriple = 750.f / 390;
     self.circleView.contentViewScaleDifferent = 0.2;
     [self.circleView reloadData];
 }
@@ -82,39 +82,13 @@
     UIImage *image = [UIImage imageWithContentsOfFile:path];
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.image = image;
-
-//    JFInsideView *testView = [[NSBundle mainBundle] loadNibNamed:@"JFInsideView" owner:nil options:nil].firstObject;
-    imageView.layer.cornerRadius = 10.f;
     imageView.layer.shadowColor = [UIColor blackColor].CGColor;
     imageView.layer.shadowOpacity = 0.8f;
     imageView.layer.shadowRadius = 2.f;
     imageView.layer.shadowOffset = CGSizeMake(2, 2);
-//    imageView.lbTest.text = [NSString stringWithFormat:@"%d", index + 1];
-//    if (index == 0) {
-//        testView.backgroundColor = [UIColor grayColor];
-//    }
-//
-//    if (index == 1) {
-//        testView.backgroundColor = [UIColor greenColor];
-//    }
-//    if (index == 2) {
-//        testView.backgroundColor = [UIColor redColor];
-//    }
-//    if (index == 3) {
-//        testView.backgroundColor = [UIColor darkGrayColor];
-//    }
-//    if (index == 4) {
-//        testView.backgroundColor = [UIColor yellowColor];
-//    }
-//    if (index == 5) {
-//        testView.backgroundColor = [UIColor blueColor];
-//    }
-//    if (index == 6) {
-//        testView.backgroundColor = [UIColor brownColor];
-//    }
-
     return imageView;
 }
+
 
 - (void)circleView:(JFCircleView *)circleView clickIndex:(NSUInteger)index {
     JFBannerModel *model = self.models[index];
